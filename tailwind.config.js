@@ -9,10 +9,9 @@ export default {
       colors: {
         // background colors
         appBg: "var(--bg-app)",
-        level1: "--bg-level-1",
-        level2: "--bg-level-2",
-        level3: "--bg-level-3",
-        level4: "--bg-level-4",
+        firstLayer: "var(--bg-layer-1)",
+        secondLayer: "var(--bg-layer-2)",
+        thirdLayer: "var(--bg-layer-3)",
         button: "var(--bg-button-primary)",
         buttonHover: "var(--bg-button-hover)",
         buttonSecondary: "var(--bg-button-secondary)",

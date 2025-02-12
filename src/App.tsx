@@ -1,11 +1,10 @@
 import LeftPanel from "./components/LeftPanel";
 import MiddlePanel from "./components/MiddlePanel";
 import RightPanel from "./components/RightPanel";
-import "./App.css";
 
 export default function App() {
   return (
-    <div className={`flex min-h-screen`}>
+    <div className={`flex bg-appBg text-appText`}>
       {/* Left Panel - Personal Info */}
       <aside className={`fixed left-0 top-1/4 flex w-2/6 justify-center p-6`}>
         <LeftPanel />
@@ -15,7 +14,7 @@ export default function App() {
         <MiddlePanel />
       </main>
       {/* Right Panel - Navigation Links */}
-      <aside className={`fixed right-0 top-1/4 flex w-1/6 p-6`}>
+      <aside className={`fixed right-0 top-1/4 flex w-1/6 justify-center p-6`}>
         <RightPanel />
       </aside>
     </div>

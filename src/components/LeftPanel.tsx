@@ -6,15 +6,9 @@ export default function LeftPanel() {
   const descriptions = ["Frontend Developer", "React Enthusiast", "UI/UX Designer"];
 
   return (
-    <div className={`flex w-[80%] flex-col items-center gap-4 rounded-lg p-6 shadow-lg`}>
+    <div className={`bg-firstLayer flex w-[80%] flex-col items-center gap-4 rounded-lg p-6 shadow-lg`}>
       {/* Photo */}
-      <img
-        src="/logo.png"
-        alt="Profile Picture"
-        width={120}
-        height={120}
-        className="h-32 w-32 rounded-full border-4 border-[#2a2e33] shadow-md"
-      />
+      <img src="/logo.png" alt="Profile Picture" width={120} height={120} className="h-32 w-32 rounded-full shadow-md" />
       {/* Name */}
       <h1 className={`text-2xl font-bold`}>Dimitris Kyprianou</h1>
 
@@ -35,7 +29,7 @@ export default function LeftPanel() {
       </div>
 
       {/* Social Links */}
-      <div className={`flex w-full items-center justify-around rounded-lg p-1`}>
+      <div className={`bg-secondLayer flex w-full items-center justify-around rounded-lg p-1`}>
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} className={``} />
         </a>
@@ -52,7 +46,7 @@ export default function LeftPanel() {
 
       {/* Download Button */}
       <button
-        className={`mt-4 rounded-lg px-4 py-2 text-sm font-semibold shadow-md hover:bg-[#13bbc2]`}
+        className={`bg-button mt-4`}
         onClick={() => {
           alert("Downloading CV...");
         }}

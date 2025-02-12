@@ -12,7 +12,7 @@ export default function RightPanel() {
     dispatch(toggleTheme());
   };
   return (
-    <div className={`flex rounded-lg p-6 shadow-lg`}>
+    <div className={`bg-firstLayer flex rounded-lg p-6 shadow-lg`}>
       <nav className="sticky top-16 flex flex-col items-start space-y-6">
         <a href="#studies" className={``}>
           Studies
@@ -32,7 +32,7 @@ export default function RightPanel() {
         <a href="#contact" className={``}>
           Contact Info
         </a>
-        <button onClick={handleThemeToggle} className={`h-[40px] w-full rounded-lg p-1`}>
+        <button onClick={handleThemeToggle} className={`bg-button`}>
           <FontAwesomeIcon icon={themeVar === "light" ? faMoon : faSun} className="mr-2 inline-block" />
           Toggle theme
         </button>
