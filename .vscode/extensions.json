@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "miguelsolorio.fluent-icons",
+    "vscode-icons-team.vscode-icons",
+    "esbenp.prettier-vscode",
+    "christian-kohler.path-intellisense",
+    "sdras.night-owl",
+    "dracula-theme.theme-dracula",
+    "naumovs.color-highlight",
+    "usernamehw.errorlens",
+    "aaron-bond.better-comments"
+  ]
+}
