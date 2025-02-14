@@ -2,11 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Typewriter from "../utils/typewriter";
 
-export default function LeftPanel() {
+export default function ProjectionPanel() {
   const descriptions = ["Frontend Developer", "React Enthusiast", "UI/UX Designer"];
 
   return (
-    <div className={`bg-firstLayer flex w-[80%] flex-col items-center gap-4 rounded-lg p-6 shadow-lg`}>
+    <div className={`flex w-[80%] flex-col items-center gap-4 rounded-lg`}>
       {/* Photo */}
       <img src="/logo.png" alt="Profile Picture" width={120} height={120} className="h-32 w-32 rounded-full shadow-md" />
       {/* Name */}
@@ -29,7 +29,7 @@ export default function LeftPanel() {
       </div>
 
       {/* Social Links */}
-      <div className={`bg-secondLayer flex w-full items-center justify-around rounded-lg p-1`}>
+      <div className={`flex w-full items-center justify-around rounded-lg bg-secondLayer p-1`}>
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} className={``} />
         </a>
@@ -46,7 +46,7 @@ export default function LeftPanel() {
 
       {/* Download Button */}
       <button
-        className={`bg-button mt-4`}
+        className={`mt-4 bg-button`}
         onClick={() => {
           alert("Downloading CV...");
         }}

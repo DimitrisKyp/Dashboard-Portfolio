@@ -4,7 +4,7 @@ import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { RootState } from "../store/store";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function RightPanel() {
+export default function NavigationPanel() {
   const dispatch = useDispatch();
   const themeVar = useSelector((state: RootState) => state.settings.theme);
 
@@ -12,7 +12,7 @@ export default function RightPanel() {
     dispatch(toggleTheme());
   };
   return (
-    <div className={`bg-firstLayer flex rounded-lg p-6 shadow-lg`}>
+    <div className={`flex rounded-lg bg-firstLayer p-6 shadow-lg`}>
       <nav className="sticky top-16 flex flex-col items-start space-y-6">
         <a href="#studies" className={``}>
           Studies

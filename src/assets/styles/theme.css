@@ -1,15 +1,15 @@
 :root {
-  --bg-app: rgba(27, 31, 36, 1);
-  --bg-layer-1: rgba(32, 36, 40, 1);
-  --bg-layer-2: rgba(37, 41, 46, 1);
-  --bg-layer-3: rgba(42, 46, 51, 1);
-  --bg-button-primary: rgba(17, 165, 172, 1);
+  --bg-app: rgba(3, 11, 21, 1);
+  --bg-layer-1: rgba(25, 27, 29, 1);
+  --bg-layer-2: rgba(32, 34, 36, 1);
+  --bg-layer-3: rgba(42, 44, 46, 1);
+  --bg-button-primary: rgba(57, 151, 156, 1);
   --bg-button-secondary: rgba(245, 166, 35, 1);
 
   /* text colors */
   --text-app: rgba(250, 250, 250, 1);
   --text-primary: rgba(209, 213, 219, 1);
-  --text-secondary: rgba(17, 165, 172, 1);
+  --text-secondary: rgba(57, 151, 156, 1);
   --text-hover: rgba(17, 165, 172, 0.5);
 }
 

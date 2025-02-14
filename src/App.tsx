@@ -1,22 +1,22 @@
-import LeftPanel from "./components/LeftPanel";
-import MiddlePanel from "./components/MiddlePanel";
-import RightPanel from "./components/RightPanel";
+import NavigationPanel from "./components/NavigationPanel";
+import ProjectionPanel from "./components/ProjectionPanel";
+import MainPanel from "./components/MainPanel";
 
 export default function App() {
   return (
-    <div className={`flex bg-appBg text-appText`}>
-      {/* Left Panel - Personal Info */}
-      <aside className={`fixed left-0 top-1/4 flex w-2/6 justify-center p-6`}>
-        <LeftPanel />
-      </aside>
+    <div className="flex h-screen items-center bg-appBg text-appText">
+      {/* Navigation Links */}
+      <div className="flex h-[80vh] w-[10%] items-center justify-center rounded-sm bg-firstLayer">
+        <NavigationPanel />
+      </div>
+      {/* Display details (slightly bigger height) */}
+      <div className="flex h-[90vh] w-[30%] items-center justify-center rounded-sm bg-secondLayer">
+        <ProjectionPanel />
+      </div>
       {/* Main Content Area */}
-      <main className="ml-[33.33%] mr-[16.66%] w-3/6 overflow-y-auto p-6">
-        <MiddlePanel />
-      </main>
-      {/* Right Panel - Navigation Links */}
-      <aside className={`fixed right-0 top-1/4 flex w-1/6 justify-center p-6`}>
-        <RightPanel />
-      </aside>
+      <div className="flex h-[80vh] w-[50%] items-center justify-center rounded-sm bg-firstLayer">
+        <MainPanel />
+      </div>
     </div>
   );
 }
