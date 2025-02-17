@@ -13,14 +13,14 @@ export default {
         secondLayer: "var(--bg-layer-2)",
         thirdLayer: "var(--bg-layer-3)",
         button: "var(--bg-button-primary)",
-        buttonHover: "var(--bg-button-hover)",
         buttonSecondary: "var(--bg-button-secondary)",
-
+        tooltip: "var(--bg-tooltip)",
         // text colors
         appText: "var(--text-app)",
         textPrimary: "var(--text-primary)",
         textSecondary: "var(--text-secondary)",
-        textHover: "var(--text-hover)",
+        // hover
+        hover: "var(--hover)",
       },
     },
     screens: {

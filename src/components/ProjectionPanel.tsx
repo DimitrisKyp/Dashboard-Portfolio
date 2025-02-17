@@ -43,16 +43,6 @@ export default function ProjectionPanel() {
           <FontAwesomeIcon icon={faInstagram} className={``} />
         </a>
       </div>
-
-      {/* Download Button */}
-      <button
-        className={`mt-4 bg-button`}
-        onClick={() => {
-          alert("Downloading CV...");
-        }}
-      >
-        Download CV
-      </button>
     </div>
   );
 }

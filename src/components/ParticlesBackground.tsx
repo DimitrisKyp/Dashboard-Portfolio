@@ -48,7 +48,7 @@ export default function ParticlesBackground() {
         events: {
           onClick: {
             enable: true,
-            mode: "pause",
+            mode: "push",
           },
           onHover: {
             enable: true,
