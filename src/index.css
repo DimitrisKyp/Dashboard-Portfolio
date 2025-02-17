@@ -16,7 +16,6 @@
 
 #root {
   margin: 0 auto;
-  text-align: center;
 }
 
 html {
@@ -57,4 +56,21 @@ a {
 
 a:hover {
   color: rgba(17, 165, 172, 1);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-182%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.animate-marquee > div {
+  flex-shrink: 0;
 }

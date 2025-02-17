@@ -2,24 +2,23 @@ import { configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { combineReducers } from "redux";
-import settingsReducer from "./slices/settingsSlice";
+import preferencesReducer from "./slices/preferencesSlice";
 
 const rootReducer = combineReducers({
-  settings: settingsReducer,
+  preferences: preferencesReducer,
 });
 
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["settings"],
+  whitelist: ["preferences"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({
   reducer: persistedReducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({ serializableCheck: false }),
+  middleware: getDefaultMiddleware => getDefaultMiddleware({ serializableCheck: false }),
 });
 
 export const persistor = persistStore(store);

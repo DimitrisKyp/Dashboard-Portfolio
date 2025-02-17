@@ -11,7 +11,7 @@ export default function ParticlesBackground() {
     background: "rgba(3, 11, 21, 1)",
     particles: "rgba(202, 251, 253, 1)",
   });
-  const theme = useSelector((state: RootState) => state.settings.theme);
+  const theme = useSelector((state: RootState) => state.preferences.theme);
 
   const updateThemeColors = () => {
     if (theme === "dark") {

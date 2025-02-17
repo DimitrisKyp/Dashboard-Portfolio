@@ -6,7 +6,7 @@ export default function ProjectionPanel() {
   const descriptions = ["Frontend Developer", "React Enthusiast", "UI/UX Designer"];
 
   return (
-    <div className={`flex w-[80%] flex-col items-center gap-4 rounded-lg`}>
+    <div className={`flex w-[80%] flex-col items-center gap-4 rounded-sm`}>
       {/* Photo */}
       <img src="/logo.png" alt="Profile Picture" width={120} height={120} className="h-32 w-32 rounded-full shadow-md" />
       {/* Name */}
@@ -29,7 +29,7 @@ export default function ProjectionPanel() {
       </div>
 
       {/* Social Links */}
-      <div className={`flex w-full items-center justify-around rounded-lg bg-secondLayer p-1`}>
+      <div className={`flex w-full items-center justify-around rounded-sm bg-secondLayer p-1`}>
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} className={``} />
         </a>

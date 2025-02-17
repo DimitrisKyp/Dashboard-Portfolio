@@ -20,11 +20,7 @@ interface NotificationBarProps {
 }
 
 // NotificationBar Component
-const NotificationBar: React.FC<NotificationBarProps> = ({
-  message,
-  type,
-  onRemove,
-}) => {
+const NotificationBar: React.FC<NotificationBarProps> = ({ message, type, onRemove }) => {
   const bgColor = {
     success: "bg-green-500",
     error: "bg-red-500",
@@ -54,26 +50,21 @@ interface NotificationProviderProps {
 }
 
 // NotificationProvider Component
-export const NotificationProvider: React.FC<NotificationProviderProps> = ({
-  children,
-}) => {
+export const NotificationProvider: React.FC<NotificationProviderProps> = ({ children }) => {
   const [notifications, setNotifications] = useState<Notification[]>([]);
-  const language = useSelector((state: RootState) => state.settings.language);
+  const language = useSelector((state: RootState) => state.preferences.language);
 
   const translation = (message: string) => {
     return getTranslation("notifications", message, language);
   };
 
-  const addNotificationToState = (
-    message: string,
-    type: "success" | "error" | "warning"
-  ) => {
+  const addNotificationToState = (message: string, type: "success" | "error" | "warning") => {
     const id = Math.floor(Math.random() * 1000);
-    setNotifications((prev) => [...prev, { id, message, type }]);
+    setNotifications(prev => [...prev, { id, message, type }]);
   };
 
   const removeNotification = (id: number) => {
-    setNotifications((prev) => prev.filter((item) => item.id !== id));
+    setNotifications(prev => prev.filter(item => item.id !== id));
   };
 
   useEffect(() => {
@@ -81,11 +72,9 @@ export const NotificationProvider: React.FC<NotificationProviderProps> = ({
   }, []);
 
   return (
-    <NotificationContext.Provider
-      value={{ addNotification: addNotificationToState }}
-    >
+    <NotificationContext.Provider value={{ addNotification: addNotificationToState }}>
       <div className="notification-container fixed bottom-2 left-0 flex w-full flex-col items-center">
-        {notifications.map((item) => (
+        {notifications.map(item => (
           <NotificationBar
             key={item.id}
             message={translation(item.message)}

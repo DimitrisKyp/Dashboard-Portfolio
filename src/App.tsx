@@ -9,15 +9,14 @@ export default function App() {
       {/* Particle Background */}
       <ParticlesBackground />
 
-      {/* Main Content */}
       <div className="relative flex w-[90%] items-center">
-        <div className="flex h-[80vh] w-[8%] items-center justify-center rounded-sm bg-firstLayer">
+        <div className="flex h-[80%] w-[8%] items-center justify-center rounded-sm bg-firstLayer">
           <NavigationPanel />
         </div>
-        <div className="flex h-[90vh] w-[30%] items-center justify-center rounded-sm bg-secondLayer">
+        <div className="flex h-[90%] w-[30%] items-center justify-center rounded-sm bg-secondLayer">
           <ProjectionPanel />
         </div>
-        <div className="flex h-[80vh] w-[50%] items-center justify-center rounded-sm bg-firstLayer">
+        <div className="flex h-[80%] w-[50%] items-center justify-center rounded-sm bg-firstLayer">
           <MainPanel />
         </div>
       </div>

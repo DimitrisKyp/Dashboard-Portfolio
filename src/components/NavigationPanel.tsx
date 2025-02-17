@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { toggleTheme } from "../store/slices/settingsSlice";
+import { toggleTheme } from "../store/slices/preferencesSlice";
 import {
   faBriefcase,
   faCloudArrowDown,
@@ -17,7 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function NavigationPanel() {
   const dispatch = useDispatch();
-  const themeVar = useSelector((state: RootState) => state.settings.theme);
+  const themeVar = useSelector((state: RootState) => state.preferences.theme);
   const [activeSection, setActiveSection] = useState<string>("");
   const [hoveredButton, setHoveredButton] = useState<string | null>(null);
 
@@ -56,7 +56,7 @@ export default function NavigationPanel() {
               <FontAwesomeIcon icon={icon} size="lg" />
             </button>
             {/* Tooltip */}
-            {hoveredButton === id && <span className="bg-tooltip absolute left-12 w-max rounded px-2 py-1 text-sm shadow-md">{label}</span>}
+            {hoveredButton === id && <span className="absolute left-12 w-max rounded bg-tooltip px-2 py-1 text-sm shadow-md">{label}</span>}
           </div>
         ))}
         {/* Theme Toggle Button */}
@@ -65,12 +65,12 @@ export default function NavigationPanel() {
             onClick={handleThemeToggle}
             onMouseEnter={() => setHoveredButton("theme")}
             onMouseLeave={() => setHoveredButton(null)}
-            className="hover:text-hover bg-transparent transition-colors duration-300"
+            className="bg-transparent transition-colors duration-300 hover:text-hover"
           >
             <FontAwesomeIcon icon={themeVar === "light" ? faMoon : faSun} size="lg" />
           </button>
           {hoveredButton === "theme" && (
-            <span className="bg-tooltip absolute left-12 w-max rounded px-2 py-1 text-sm shadow-md">Toggle theme</span>
+            <span className="absolute left-12 w-max rounded bg-tooltip px-2 py-1 text-sm shadow-md">Toggle theme</span>
           )}
         </div>
       </div>
@@ -81,12 +81,12 @@ export default function NavigationPanel() {
           onClick={() => alert("Downloading CV...")}
           onMouseEnter={() => setHoveredButton("cv")}
           onMouseLeave={() => setHoveredButton(null)}
-          className="hover:text-hover bg-transparent text-textSecondary transition-colors duration-300"
+          className="bg-transparent text-textSecondary transition-colors duration-300 hover:text-hover"
         >
           <FontAwesomeIcon icon={faCloudArrowDown} size="lg" />
         </button>
         {hoveredButton === "cv" && (
-          <span className="bg-tooltip absolute left-12 w-max rounded px-2 py-1 text-sm shadow-md">Download CV</span>
+          <span className="absolute left-12 w-max rounded bg-tooltip px-2 py-1 text-sm shadow-md">Download CV</span>
         )}
       </div>
     </nav>
