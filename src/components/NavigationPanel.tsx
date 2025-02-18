@@ -11,14 +11,16 @@ import {
   faMoon,
   faPerson,
   faSun,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { RootState } from "../store/store";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { setActiveMenu } from "../store/slices/preferencesSlice";
 
 export default function NavigationPanel() {
   const dispatch = useDispatch();
   const themeVar = useSelector((state: RootState) => state.preferences.theme);
-  const [activeSection, setActiveSection] = useState<string>("");
+  const activeMenu = useSelector((state: RootState) => state.preferences.activeMenu);
   const [hoveredButton, setHoveredButton] = useState<string | null>(null);
 
   const handleThemeToggle = () => {
@@ -26,12 +28,13 @@ export default function NavigationPanel() {
   };
 
   const scrollToSection = (sectionId: string) => {
-    setActiveSection(sectionId);
+    dispatch(setActiveMenu(sectionId));
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
 
   const navItems = [
     { id: "homeSection", icon: faHome, label: "Home" },
+    { id: "aboutSection", icon: faUser, label: "About" },
     { id: "experienceSection", icon: faBriefcase, label: "Experience" },
     { id: "projectsSection", icon: faLaptopCode, label: "Projects" },
     { id: "studiesSection", icon: faGraduationCap, label: "Studies" },
@@ -50,13 +53,15 @@ export default function NavigationPanel() {
               onMouseEnter={() => setHoveredButton(id)}
               onMouseLeave={() => setHoveredButton(null)}
               className={`relative bg-transparent transition-colors duration-300 ${
-                activeSection === id ? "text-textSecondary" : "text-textPrimary"
+                activeMenu === id ? "text-textSecondary" : "text-textPrimary"
               } hover:text-hover`}
             >
-              <FontAwesomeIcon icon={icon} size="lg" />
+              <FontAwesomeIcon icon={icon} size="xl" />
             </button>
             {/* Tooltip */}
-            {hoveredButton === id && <span className="absolute left-12 w-max rounded bg-tooltip px-2 py-1 text-sm shadow-md">{label}</span>}
+            {hoveredButton === id && (
+              <span className="absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">{label}</span>
+            )}
           </div>
         ))}
         {/* Theme Toggle Button */}
@@ -67,10 +72,10 @@ export default function NavigationPanel() {
             onMouseLeave={() => setHoveredButton(null)}
             className="bg-transparent transition-colors duration-300 hover:text-hover"
           >
-            <FontAwesomeIcon icon={themeVar === "light" ? faMoon : faSun} size="lg" />
+            <FontAwesomeIcon icon={themeVar === "light" ? faMoon : faSun} size="xl" />
           </button>
           {hoveredButton === "theme" && (
-            <span className="absolute left-12 w-max rounded bg-tooltip px-2 py-1 text-sm shadow-md">Toggle theme</span>
+            <span className="absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">Toggle theme</span>
           )}
         </div>
       </div>
@@ -83,10 +88,10 @@ export default function NavigationPanel() {
           onMouseLeave={() => setHoveredButton(null)}
           className="bg-transparent text-textSecondary transition-colors duration-300 hover:text-hover"
         >
-          <FontAwesomeIcon icon={faCloudArrowDown} size="lg" />
+          <FontAwesomeIcon icon={faCloudArrowDown} size="xl" />
         </button>
         {hoveredButton === "cv" && (
-          <span className="absolute left-12 w-max rounded bg-tooltip px-2 py-1 text-sm shadow-md">Download CV</span>
+          <span className="absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">Download CV</span>
         )}
       </div>
     </nav>

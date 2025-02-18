@@ -33,5 +33,5 @@ export default function Typewriter({ descriptions, typingSpeed = 30, pauseTime =
     return () => clearTimeout(timeout);
   }, [currentText, isDeleting, descriptions, currentIndex, typingSpeed, pauseTime]);
 
-  return <p className="h-[20px] text-center text-sm text-[#13bbc2]">{currentText}</p>;
+  return <p className="h-[30px] text-lg text-textSecondary">{currentText}</p>;
 }

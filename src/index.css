@@ -40,7 +40,7 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
-  border-radius: 8px;
+  border-radius: 2px;
   padding: 0.5rem 1rem;
 }
 
@@ -50,12 +50,13 @@ button:hover {
 
 a {
   font-weight: 500;
-  color: rgba(209, 213, 219, 1);
+  color: var(--text-primary);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: rgba(17, 165, 172, 1);
+  color: var(--hover);
+  cursor: pointer;
 }
 
 @keyframes marquee {
@@ -63,7 +64,7 @@ a:hover {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-182%);
+    transform: translateX(-141%);
   }
 }
 
