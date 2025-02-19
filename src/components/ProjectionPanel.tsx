@@ -16,16 +16,16 @@ export default function ProjectionPanel() {
         <span className="text-2xl font-semibold">Dimitris</span>
       </div>
       <div className="relative z-10 mb-5 flex w-full justify-center space-x-8">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/DimitrisKyp" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} className="text-2xl text-appText hover:opacity-50" />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/dimitrios-kyprianou" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} className="text-2xl text-appText hover:opacity-50" />
         </a>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/kyprianou.dimitris" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebook} className="text-2xl text-appText hover:opacity-50" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/dimitris.kypr" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} className="text-2xl text-appText hover:opacity-50" />
         </a>
       </div>
