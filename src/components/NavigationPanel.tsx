@@ -35,8 +35,8 @@ export default function NavigationPanel() {
   const navItems = [
     { id: "homeSection", icon: faHome, label: "Home" },
     { id: "aboutSection", icon: faUser, label: "About" },
-    { id: "experienceSection", icon: faBriefcase, label: "Experience" },
-    { id: "projectsSection", icon: faLaptopCode, label: "Projects" },
+    { id: "skillsSection", icon: faBriefcase, label: "Skills" },
+    { id: "experienceSection", icon: faLaptopCode, label: "Experience" },
     { id: "studiesSection", icon: faGraduationCap, label: "Studies" },
     { id: "interestsSection", icon: faPerson, label: "Interests" },
     { id: "contactSection", icon: faEnvelope, label: "Contact" },

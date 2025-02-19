@@ -16,7 +16,7 @@ export default function App() {
         <div className="flex h-[90%] w-[30%] items-center justify-center rounded-sm bg-secondLayer">
           <ProjectionPanel />
         </div>
-        <div className="flex h-[80%] w-[50%] items-center justify-center rounded-sm bg-firstLayer">
+        <div className="flex h-[80%] w-[60%] items-center justify-center rounded-sm bg-firstLayer">
           <MainPanel />
         </div>
       </div>
