@@ -1,7 +1,7 @@
 import NavigationPanel from "./components/NavigationPanel";
 import ProjectionPanel from "./components/ProjectionPanel";
 import MainPanel from "./components/MainPanel";
-import ParticlesBackground from "./components/ParticlesBackground";
+import ParticlesBackground from "./services/providers/ParticlesBackground";
 
 export default function App() {
   return (

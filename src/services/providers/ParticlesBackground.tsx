@@ -3,7 +3,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type ISourceOptions, MoveDirection } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import { useSelector } from "react-redux";
-import { RootState } from "../store/store";
+import { RootState } from "../../store/store";
 
 export default function ParticlesBackground() {
   const [init, setInit] = useState(false);
