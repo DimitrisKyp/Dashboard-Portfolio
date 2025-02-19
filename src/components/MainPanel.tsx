@@ -3,7 +3,7 @@ import Home from "./mainSections/Home";
 import Skills from "./mainSections/Skills";
 import WorkingExperience from "./mainSections/WorkingExperience";
 import Studies from "./mainSections/Studies";
-import Interests from "./mainSections/Interests";
+import PersonalNotes from "./mainSections/PersonalNotes";
 import Contact from "./mainSections/Contact";
 
 export default function MainPanel() {
@@ -29,8 +29,8 @@ export default function MainPanel() {
         <Studies />
       </section>
 
-      <section id="interestsSection">
-        <Interests />
+      <section id="personalNotesSection">
+        <PersonalNotes />
       </section>
 
       <section id="contactSection">

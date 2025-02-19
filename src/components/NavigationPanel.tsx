@@ -38,7 +38,7 @@ export default function NavigationPanel() {
     { id: "skillsSection", icon: faBriefcase, label: "Skills" },
     { id: "experienceSection", icon: faLaptopCode, label: "Experience" },
     { id: "studiesSection", icon: faGraduationCap, label: "Studies" },
-    { id: "interestsSection", icon: faPerson, label: "Interests" },
+    { id: "personalNotesSection", icon: faPerson, label: "Personal" },
     { id: "contactSection", icon: faEnvelope, label: "Contact" },
   ];
 
@@ -75,7 +75,7 @@ export default function NavigationPanel() {
             <FontAwesomeIcon icon={themeVar === "light" ? faMoon : faSun} size="xl" />
           </button>
           {hoveredButton === "theme" && (
-            <span className="absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">Toggle theme</span>
+            <span className="absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">Change theme</span>
           )}
         </div>
       </div>

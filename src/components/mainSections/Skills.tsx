@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <div className="flex flex-col rounded-sm bg-secondLayer p-6">
       <div>
-        <span className="mr-2 text-5xl font-semibold">My</span>
+        <span className="mr-2 text-5xl font-normal">My</span>
         <span className="text-5xl font-bold text-textSecondary">Advantages</span>
       </div>
       <div className="mt-10 space-y-8 text-lg leading-relaxed text-textPrimary">

@@ -27,20 +27,16 @@ export default function WorkingExperience() {
   ];
 
   return (
-    <div className="flex flex-col rounded-sm bg-secondLayer p-6">
+    <div className="flex flex-col space-y-10 rounded-sm bg-secondLayer p-6">
       <div>
-        <span className="mr-2 text-5xl font-semibold">Working</span>
+        <span className="mr-2 text-5xl font-normal">Working</span>
         <span className="text-5xl font-bold text-textSecondary">Experience</span>
       </div>
 
-      <div className="mb-8 text-lg text-textPrimary">
-        <p>Strong communication and teamwork skills, with a focus on delivering exceptional results.</p>
-      </div>
-
       {/* Timeline Section */}
-      <div className="relative">
+      <div>
         {experiences.map((exp, index) => (
-          <div key={index} className="relative mb-10 flex space-x-4">
+          <div key={index} className="relative mb-2 flex space-x-4">
             {/* Left Side - Company & Period */}
             <div className="w-3/12 text-right">
               <span className="text-xl font-semibold text-appText">{exp.company}</span>

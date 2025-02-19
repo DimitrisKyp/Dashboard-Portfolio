@@ -2,7 +2,8 @@ export default function Contact() {
   return (
     <div className="flex flex-col rounded-sm bg-secondLayer p-6">
       <div>
-        <span className="mr-2 text-5xl font-semibold">Contact</span>
+        <span className="mr-2 text-5xl font-normal">Contact</span>
+        <span className="text-5xl font-bold text-textSecondary">Me</span>
       </div>
       <div className="mt-6 flex justify-center">
         <div className="grid grid-cols-2 gap-4 text-center text-lg">
@@ -21,10 +22,6 @@ export default function Contact() {
           <div>
             <span className="block font-semibold text-textSecondary">GitHub</span>
             <span className="block text-gray-300">github.com/DimitrisKyp</span>
-          </div>
-          <div>
-            <span className="block font-semibold text-textSecondary">Language</span>
-            <span className="block text-gray-300">English, Greek</span>
           </div>
         </div>
       </div>

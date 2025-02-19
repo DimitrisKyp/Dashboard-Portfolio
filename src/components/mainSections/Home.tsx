@@ -1,6 +1,7 @@
 import Typewriter from "../../utils/typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckDouble } from "@fortawesome/free-solid-svg-icons";
+import { faAddressCard, faCheckDouble } from "@fortawesome/free-solid-svg-icons";
+
 export default function Home() {
   const descriptions = ["Frontend Developer", "React Enthusiast", "UI/UX Designer"];
   const technologies = [
@@ -21,7 +22,9 @@ export default function Home() {
   return (
     <div className="flex h-[400px] flex-col justify-between rounded-sm bg-secondLayer p-6">
       <div>
-        <span className="text-5xl font-semibold">Dimitris Kyprianou</span>
+        <span className="mr-2 text-5xl font-normal">Dimitris</span>
+        <span className="text-5xl font-bold text-textSecondary">Kyprianou</span>
+
         <Typewriter descriptions={descriptions} />
         <p className="m-0 text-lg text-textPrimary">A Frontend Developer Crafting Smooth & Engaging Web Experiences</p>
       </div>
@@ -37,18 +40,13 @@ export default function Home() {
         </span>
       </div>
 
-      <div className="flex justify-center space-x-8">
-        <a
-          onClick={() => scrollToSection("projectsSection")}
-          className="transform text-xl text-button transition-all duration-300 hover:scale-110"
-        >
-          Check out my work
-        </a>
+      <div className="flex space-x-8">
         <a
           onClick={() => scrollToSection("contactSection")}
           className="transform text-xl text-button transition-all duration-300 hover:scale-110"
         >
-          Get in touch
+          <FontAwesomeIcon icon={faAddressCard} size="lg" className="mr-2" />
+          <span className="text-textPrimary">Get in touch</span>
         </a>
       </div>
 
