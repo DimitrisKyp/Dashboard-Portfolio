@@ -13,6 +13,9 @@ export default function Home() {
     { name: "Node JS", src: "/src/assets/images/node-js.svg" },
     { name: "JQuery", src: "/src/assets/images/jquery.svg" },
     { name: "Git", src: "/src/assets/images/git.svg" },
+    { name: "Redux", src: "/src/assets/images/redux.svg" },
+    { name: "Android Studio", src: "/src/assets/images/android-studio.svg" },
+    { name: "Xcode", src: "/src/assets/images/xcode.svg" },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -55,7 +58,7 @@ export default function Home() {
         <div className="text-xl font-semibold">Tools</div>
         <div className="mx-4 h-[100px] w-[5px] bg-button" />
         <div className="overflow-hidden">
-          <div className="animate-marquee flex space-x-12">
+          <div className="animate-marquee flex space-x-10">
             {technologies.concat(technologies).map((tech, index) => (
               <div key={index} className="flex flex-col items-center">
                 <img src={tech.src} alt={tech.name} className="h-[60px] w-[60px]" />
