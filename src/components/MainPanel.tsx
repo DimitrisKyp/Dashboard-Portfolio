@@ -27,7 +27,7 @@ export default function MainPanel() {
       {
         root: containerRef.current,
         rootMargin: "0px",
-        threshold: 0.4,
+        threshold: 0.5,
       },
     );
 
@@ -39,7 +39,7 @@ export default function MainPanel() {
   }, [dispatch]);
 
   return (
-    <div ref={containerRef} className="custom-scrollbar h-[90%] w-[90%] space-y-6 overflow-y-auto scroll-smooth">
+    <div ref={containerRef} className="custom-scrollbar text-appColor h-[90%] w-[90%] space-y-6 overflow-y-auto scroll-smooth">
       <section id="homeSection">
         <Home />
       </section>

@@ -59,7 +59,9 @@ export default function NavigationPanel() {
               <FontAwesomeIcon icon={icon} size="xl" />
             </button>
             {hoveredButton === id && (
-              <span className="absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">{label}</span>
+              <span className="text-profileColor absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">
+                {label}
+              </span>
             )}
           </div>
         ))}
@@ -80,7 +82,9 @@ export default function NavigationPanel() {
             <FontAwesomeIcon icon={faCloudDownload} size="xl" />
           </a>
           {hoveredButton === "cv" && (
-            <span className="absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">Download CV</span>
+            <span className="text-profileColor absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">
+              Download CV
+            </span>
           )}
         </div>
 
@@ -89,7 +93,7 @@ export default function NavigationPanel() {
             onClick={handleThemeToggle}
             onMouseEnter={() => setHoveredButton("theme")}
             onMouseLeave={() => setHoveredButton(null)}
-            className={`hover:text-primaryColor bg-transparent transition-all duration-300 hover:scale-125`}
+            className={`hover:text-primaryColor text-appColor bg-transparent transition-all duration-300 hover:scale-125`}
           >
             <motion.div
               key={themeVar}
@@ -101,7 +105,9 @@ export default function NavigationPanel() {
             </motion.div>
           </button>
           {hoveredButton === "theme" && (
-            <span className="absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">Change Theme</span>
+            <span className="text-profileColor absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">
+              Change Theme
+            </span>
           )}
         </div>
       </div>

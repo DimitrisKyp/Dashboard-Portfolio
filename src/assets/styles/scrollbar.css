@@ -15,7 +15,6 @@
   border-radius: 2px;
   border: 1px solid transparent;
   background-clip: content-box;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   cursor: grab;
 }
 
@@ -28,5 +27,4 @@
 /* ✋ Changes the cursor when actively dragging the scrollbar */
 .custom-scrollbar::-webkit-scrollbar-thumb:active {
   cursor: grabbing;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }

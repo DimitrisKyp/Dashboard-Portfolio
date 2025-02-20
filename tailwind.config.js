@@ -7,7 +7,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        appBg: "var(--bg-app)",
         firstLayer: "var(--bg-layer-1)",
         secondLayer: "var(--bg-layer-2)",
         thirdLayer: "var(--bg-layer-3)",
@@ -15,6 +14,7 @@ export default {
         appColor: "var(--color-app)",
         primaryColor: "var(--color-primary)",
         secondaryColor: "var(--color-secondary)",
+        profileColor: "var(--color-profile)",
       },
     },
     screens: {

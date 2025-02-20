@@ -21,8 +21,8 @@ export default function ParticlesBackground() {
       });
     } else if (theme === "light") {
       setThemeColors({
-        background: "rgb(245, 227, 206)",
-        particles: "#5a5757",
+        background: "rgba(248, 242, 234, 1)",
+        particles: "rgba(189, 179, 166, 1)",
       });
     }
   };
