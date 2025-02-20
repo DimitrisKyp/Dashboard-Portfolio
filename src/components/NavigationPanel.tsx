@@ -70,14 +70,15 @@ export default function NavigationPanel() {
       {/* Theme Toggle + Download CV */}
       <div className="flex flex-col space-y-5">
         <div className="relative flex items-center justify-center">
-          <button
-            onClick={() => alert("Downloading CV...")}
+          <a
+            href="/CV.pdf"
+            download="Dimitris-Kyprianou-Resume.pdf"
             onMouseEnter={() => setHoveredButton("cv")}
             onMouseLeave={() => setHoveredButton(null)}
-            className={`bg-transparent transition-all duration-300 hover:scale-125 hover:text-hover`}
+            className="bg-transparent transition-all duration-300 hover:scale-125"
           >
             <FontAwesomeIcon icon={faCloudDownload} size="xl" />
-          </button>
+          </a>
           {hoveredButton === "cv" && (
             <span className="absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">Download CV</span>
           )}
