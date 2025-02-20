@@ -9,7 +9,7 @@ interface PreferencesState {
 const initialState: PreferencesState = {
   language: "EN",
   theme: "dark",
-  activeMenu: "AboutMe",
+  activeMenu: "homeSection",
 };
 
 const preferencesSlice = createSlice({

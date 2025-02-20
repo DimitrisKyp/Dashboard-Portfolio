@@ -37,15 +37,16 @@ export default function Contact() {
         <span className="text-5xl font-bold text-textSecondary">Me</span>
       </div>
 
-      {/* Flexbox Layout for 2 items per row */}
-      <div className="flex flex-wrap justify-evenly gap-4">
+      {/* Flexbox layout centered with responsive wrap */}
+      <div className="flex flex-wrap justify-center gap-8">
         {contactDetails.map((item, index) => (
-          <div key={index} className="flex w-[40%] items-center space-x-4 rounded-md px-4 py-2">
-            <div>
-              <FontAwesomeIcon icon={item.icon} size="2x" className="text-textSecondary" />
-            </div>
-            <div>
-              <span className="block font-semibold text-appText">{item.title}</span>
+          <div
+            key={index}
+            className="flex w-64 flex-col items-center justify-between rounded-sm bg-thirdLayer p-6 shadow-lg transition-transform duration-300 hover:scale-110"
+          >
+            <FontAwesomeIcon icon={item.icon} size="3x" className="mb-4 text-textSecondary" />
+            <div className="text-center">
+              <span className="mb-2 block text-xl font-semibold text-appText">{item.title}</span>
               {item.link ? (
                 <a target="_blank" href={item.link} className="text-text block text-lg text-textPrimary">
                   {item.details}

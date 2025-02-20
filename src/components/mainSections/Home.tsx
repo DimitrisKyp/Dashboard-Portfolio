@@ -53,7 +53,7 @@ export default function Home() {
       {/* Technologies Marquee */}
       <div className="flex items-center text-textPrimary">
         <div className="text-xl font-semibold">Tools</div>
-        <div className="mx-4 h-[100px] w-[2px] bg-button" />
+        <div className="mx-4 h-[100px] w-[5px] bg-button" />
         <div className="overflow-hidden">
           <div className="animate-marquee flex space-x-12">
             {technologies.concat(technologies).map((tech, index) => (

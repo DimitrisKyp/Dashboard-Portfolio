@@ -37,7 +37,7 @@ export default function PersonalNotes() {
         {interests.map((interest, index) => (
           <div
             key={index}
-            className="group flex w-1/4 flex-col rounded-md bg-thirdLayer p-6 text-center shadow-lg transition-transform duration-300 hover:scale-110"
+            className="group flex w-1/4 flex-col rounded-sm bg-thirdLayer p-6 text-center shadow-lg transition-transform duration-300 hover:scale-110"
           >
             <div className="rounded-sm p-4">
               <img
