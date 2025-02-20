@@ -8,6 +8,7 @@ import WorkingExperience from "./mainSections/WorkingExperience";
 import Studies from "./mainSections/Studies";
 import PersonalNotes from "./mainSections/PersonalNotes";
 import Contact from "./mainSections/Contact";
+import "../../src/assets/styles/scrollbar.css";
 
 export default function MainPanel() {
   const dispatch = useDispatch();
@@ -38,7 +39,7 @@ export default function MainPanel() {
   }, [dispatch]);
 
   return (
-    <div ref={containerRef} className="h-[90%] w-[90%] space-y-6 overflow-y-auto scroll-smooth">
+    <div ref={containerRef} className="custom-scrollbar h-[90%] w-[90%] space-y-6 overflow-y-auto scroll-smooth">
       <section id="homeSection">
         <Home />
       </section>

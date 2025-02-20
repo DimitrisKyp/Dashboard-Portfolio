@@ -1,0 +1,32 @@
+@import "../../assets/styles/theme.css";
+
+/* Changes the width of the scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Changes the attributes of the bar */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--bg-tooltip);
+  border-radius: 2px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: grab;
+}
+
+/* Changes the attributes of the bar's hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary);
+  cursor: grab;
+}
+
+/* ✋ Changes the cursor when actively dragging the scrollbar */
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}

@@ -46,28 +46,11 @@ button {
 
 a {
   font-weight: 500;
-  color: var(--text-primary);
+  color: var(--color-app);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: var(--hover);
+  color: var(--color-primary);
   cursor: pointer;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-150%);
-  }
-}
-
-.animate-marquee {
-  animation: marquee 8s linear infinite;
-}
-
-.animate-marquee > div {
-  flex-shrink: 0;
 }

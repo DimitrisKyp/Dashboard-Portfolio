@@ -3,29 +3,21 @@
   --bg-layer-1: rgba(25, 27, 29, 1);
   --bg-layer-2: rgba(32, 34, 36, 1);
   --bg-layer-3: rgba(38, 44, 44, 1);
-  --bg-button-primary: rgba(57, 151, 156, 1);
-  --bg-button-secondary: rgba(245, 166, 35, 1);
   --bg-tooltip: rgba(57, 151, 156, 0.8);
-  /* text colors */
-  --text-app: rgba(250, 250, 250, 1);
-  --text-primary: rgba(209, 213, 219, 1);
-  --text-secondary: rgba(57, 151, 156, 1);
-  /* hover */
-  --hover: rgba(57, 151, 156, 1);
+  --color-app: rgba(250, 250, 250, 1);
+  --color-primary: rgba(57, 151, 156, 1);
+  --color-secondary: rgba(209, 213, 219, 1);
 }
 
 [data-theme="light"] {
-  --bg-app: rgb(243, 220, 191);
-  --bg-layer-1: rgba(25, 27, 29, 1);
-  --bg-layer-2: rgba(32, 34, 36, 1);
-  --bg-layer-3: rgba(42, 44, 46, 1);
-  --bg-button-primary: rgba(57, 151, 156, 1);
-  --bg-button-secondary: rgba(245, 166, 35, 1);
-  --bg-tooltip: rgba(57, 151, 156, 0.5);
-  /* text colors */
-  --text-app: rgba(250, 250, 250, 1);
-  --text-primary: rgba(209, 213, 219, 1);
-  --text-secondary: rgba(57, 151, 156, 1);
-  /* hover */
-  --hover: rgba(57, 151, 156, 1);
+  --bg-app: rgba(245, 240, 235, 1); /* Soft light beige for the main background */
+  --bg-layer-1: rgba(250, 245, 240, 1); /* Lighter beige for top sections */
+  --bg-layer-2: rgba(240, 235, 230, 1); /* Slightly deeper beige for content areas */
+  --bg-layer-3: rgba(230, 225, 220, 1); /* Warm taupe for cards and raised elements */
+
+  --bg-tooltip: rgba(57, 151, 156, 0.15); /* Subtle teal tint for tooltips */
+
+  --color-app: rgba(40, 40, 40, 1); /* Rich dark gray for main text */
+  --color-primary: rgba(57, 151, 156, 1); /* Teal for primary highlights (brand consistency) */
+  --color-secondary: rgba(120, 110, 100, 1); /* Warm grayish-brown for secondary text */
 }

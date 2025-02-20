@@ -21,10 +21,10 @@ export default function PersonalNotes() {
     <div className="flex flex-col rounded-sm bg-secondLayer p-6">
       <div>
         <span className="mr-2 text-5xl font-normal">Personal</span>
-        <span className="text-5xl font-semibold text-textSecondary">Notes</span>
+        <span className="text-primaryColor text-5xl font-semibold">Notes</span>
       </div>
 
-      <div className="mb-8 text-lg text-textPrimary">
+      <div className="text-secondaryColor mb-8 text-lg">
         <p>
           Strong communication and teamwork skills, with a focus on delivering exceptional results. Skilled in adaptability, critical
           thinking, and problem-solving, with a strong desire to learn and excel. Experienced in self-management and collaborating
@@ -46,8 +46,8 @@ export default function PersonalNotes() {
                 className="h-[60px] w-[60px] transition-all duration-500 ease-in-out group-hover:rotate-12 group-hover:scale-125"
               />
             </div>
-            <h3 className="text-xl font-semibold text-appText">{interest.title}</h3>
-            <p className="mt-2 text-base text-textPrimary">{interest.description}</p>
+            <h3 className="text-appColor text-xl font-semibold">{interest.title}</h3>
+            <p className="text-secondaryColor mt-2 text-base">{interest.description}</p>
           </div>
         ))}
       </div>

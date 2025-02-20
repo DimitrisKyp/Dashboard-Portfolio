@@ -1,11 +1,11 @@
 import NavigationPanel from "./components/NavigationPanel";
-import ProjectionPanel from "./components/ProjectionPanel";
+import ProfilePanel from "./components/ProfilePanel";
 import MainPanel from "./components/MainPanel";
 import ParticlesBackground from "./services/providers/ParticlesBackground";
 
 export default function App() {
   return (
-    <div className="flex h-screen text-appText">
+    <div className="text-appColor flex h-screen">
       {/* Particle Background */}
       <ParticlesBackground />
 
@@ -14,7 +14,7 @@ export default function App() {
           <NavigationPanel />
         </div>
         <div className="flex h-[90%] w-[30%] items-center justify-center rounded-sm bg-secondLayer">
-          <ProjectionPanel />
+          <ProfilePanel />
         </div>
         <div className="flex h-[80%] w-[60%] items-center justify-center rounded-sm bg-firstLayer">
           <MainPanel />

@@ -7,20 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        // background colors
         appBg: "var(--bg-app)",
         firstLayer: "var(--bg-layer-1)",
         secondLayer: "var(--bg-layer-2)",
         thirdLayer: "var(--bg-layer-3)",
-        button: "var(--bg-button-primary)",
-        buttonSecondary: "var(--bg-button-secondary)",
         tooltip: "var(--bg-tooltip)",
-        // text colors
-        appText: "var(--text-app)",
-        textPrimary: "var(--text-primary)",
-        textSecondary: "var(--text-secondary)",
-        // hover
-        hover: "var(--hover)",
+        appColor: "var(--color-app)",
+        primaryColor: "var(--color-primary)",
+        secondaryColor: "var(--color-secondary)",
       },
     },
     screens: {

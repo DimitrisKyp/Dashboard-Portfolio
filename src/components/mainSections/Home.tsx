@@ -1,6 +1,7 @@
 import Typewriter from "../../utils/typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faCheckDouble } from "@fortawesome/free-solid-svg-icons";
+import "../../../src/assets/styles/marquee.css";
 
 export default function Home() {
   const descriptions = ["Frontend Developer", "React Enthusiast", "UI/UX Designer"];
@@ -26,19 +27,19 @@ export default function Home() {
     <div className="flex h-[400px] flex-col justify-between rounded-sm bg-secondLayer p-6">
       <div>
         <span className="mr-2 text-5xl font-normal">Dimitris</span>
-        <span className="text-5xl font-bold text-textSecondary">Kyprianou</span>
+        <span className="text-primaryColor text-5xl font-bold">Kyprianou</span>
 
         <Typewriter descriptions={descriptions} />
-        <p className="m-0 text-lg text-textPrimary">A Frontend Developer Crafting Smooth & Engaging Web Experiences</p>
+        <p className="text-secondaryColor m-0 text-lg">A Frontend Developer Crafting Smooth & Engaging Web Experiences</p>
       </div>
 
-      <div className="flex space-x-4 text-textPrimary">
+      <div className="text-secondaryColor flex space-x-4">
         <span>
-          <FontAwesomeIcon icon={faCheckDouble} size="lg" className="mr-2 text-textSecondary" />
+          <FontAwesomeIcon icon={faCheckDouble} size="lg" className="text-primaryColor mr-2" />
           Available for work
         </span>
         <span>
-          <FontAwesomeIcon icon={faCheckDouble} size="lg" className="mr-2 text-textSecondary" />
+          <FontAwesomeIcon icon={faCheckDouble} size="lg" className="text-primaryColor mr-2" />
           Full time
         </span>
       </div>
@@ -46,17 +47,17 @@ export default function Home() {
       <div className="flex space-x-8">
         <a
           onClick={() => scrollToSection("contactSection")}
-          className="transform text-xl text-button transition-all duration-300 hover:scale-110"
+          className="text-primaryColor transform text-xl transition-all duration-300 hover:scale-110"
         >
           <FontAwesomeIcon icon={faAddressCard} size="lg" className="mr-2" />
-          <span className="text-textPrimary">Get in touch</span>
+          <span className="text-appColor">Get in touch</span>
         </a>
       </div>
 
       {/* Technologies Marquee */}
-      <div className="flex items-center text-textPrimary">
+      <div className="text-secondaryColor flex items-center">
         <div className="text-xl font-semibold">Tools</div>
-        <div className="mx-4 h-[100px] w-[5px] bg-button" />
+        <div className="bg-primaryColor mx-4 h-[100px] w-[5px]" />
         <div className="overflow-hidden">
           <div className="animate-marquee flex space-x-10">
             {technologies.concat(technologies).map((tech, index) => (

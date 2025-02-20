@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-export default function ProjectionPanel() {
+export default function ProfilePanel() {
   return (
     <div className="relative flex h-full w-full flex-col justify-end overflow-hidden rounded-sm">
       <div
@@ -13,20 +13,20 @@ export default function ProjectionPanel() {
 
       {/* Social Links */}
       <div className="relative z-10 mb-5 flex w-full justify-center space-x-8">
-        <span className="text-2xl font-semibold">Dimitris</span>
+        <span className="text-3xl font-semibold">Dimitris</span>
       </div>
       <div className="relative z-10 mb-5 flex w-full justify-center space-x-8">
         <a href="https://github.com/DimitrisKyp" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} className="text-2xl text-appText hover:opacity-50" />
+          <FontAwesomeIcon icon={faGithub} className="hover:text-appColor text-3xl transition-all duration-300 hover:scale-150" />
         </a>
         <a href="https://www.linkedin.com/in/dimitrios-kyprianou" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} className="text-2xl text-appText hover:opacity-50" />
+          <FontAwesomeIcon icon={faLinkedin} className="hover:text-appColor text-3xl transition-all duration-300 hover:scale-150" />
         </a>
         <a href="https://www.facebook.com/kyprianou.dimitris" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFacebook} className="text-2xl text-appText hover:opacity-50" />
+          <FontAwesomeIcon icon={faFacebook} className="hover:text-appColor text-3xl transition-all duration-300 hover:scale-150" />
         </a>
         <a href="https://instagram.com/dimitris.kypr" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faInstagram} className="text-2xl text-appText hover:opacity-50" />
+          <FontAwesomeIcon icon={faInstagram} className="hover:text-appColor text-3xl transition-all duration-300 hover:scale-150" />
         </a>
       </div>
     </div>

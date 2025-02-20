@@ -53,8 +53,8 @@ export default function NavigationPanel() {
               onMouseEnter={() => setHoveredButton(id)}
               onMouseLeave={() => setHoveredButton(null)}
               className={`bg-transparent transition-all duration-300 ${
-                activeMenu === id ? "text-textSecondary" : "text-textPrimary"
-              } hover:scale-125 hover:text-hover`}
+                activeMenu === id ? "text-primaryColor" : "text-secondaryColor"
+              } hover:text-primaryColor hover:scale-125`}
             >
               <FontAwesomeIcon icon={icon} size="xl" />
             </button>
@@ -65,7 +65,7 @@ export default function NavigationPanel() {
         ))}
       </div>
 
-      <div className="h-[2px] w-full bg-button" />
+      <div className="bg-primaryColor h-[2px] w-full" />
 
       {/* Theme Toggle + Download CV */}
       <div className="flex flex-col space-y-5">
@@ -89,7 +89,7 @@ export default function NavigationPanel() {
             onClick={handleThemeToggle}
             onMouseEnter={() => setHoveredButton("theme")}
             onMouseLeave={() => setHoveredButton(null)}
-            className={`bg-transparent transition-all duration-300 hover:scale-125 hover:text-hover`}
+            className={`hover:text-primaryColor bg-transparent transition-all duration-300 hover:scale-125`}
           >
             <motion.div
               key={themeVar}
