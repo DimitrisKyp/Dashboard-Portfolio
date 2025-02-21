@@ -27,7 +27,7 @@ export default function Home() {
     <div className="flex h-[400px] flex-col justify-between rounded-sm bg-secondLayer p-6">
       <div>
         <span className="mr-2 text-5xl font-normal">Dimitris</span>
-        <span className="text-5xl font-bold text-primaryColor">Kyprianou</span>
+        <span className="text-5xl font-semibold text-primaryColor">Kyprianou</span>
 
         <Typewriter descriptions={descriptions} />
         <p className="m-0 text-lg text-secondaryColor">A Frontend Developer Crafting Smooth & Engaging Web Experiences</p>

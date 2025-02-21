@@ -6,14 +6,14 @@ export default function Skills() {
     <div className="flex flex-col rounded-sm bg-secondLayer p-6">
       <div>
         <span className="mr-2 text-5xl font-normal">My</span>
-        <span className="text-primaryColor text-5xl font-bold">Advantages</span>
+        <span className="text-5xl font-semibold text-primaryColor">Advantages</span>
       </div>
-      <div className="text-secondaryColor mt-10 space-y-8 text-lg leading-relaxed">
+      <div className="mt-10 space-y-8 text-lg leading-relaxed text-secondaryColor">
         {/* Frontend Section */}
         <div className="flex space-x-4">
-          <FontAwesomeIcon icon={faCode} size="xl" className="text-primaryColor mt-1" />
+          <FontAwesomeIcon icon={faCode} size="xl" className="mt-1 text-primaryColor" />
           <div>
-            <span className="text-primaryColor text-2xl font-semibold">Frontend Development</span>
+            <span className="text-2xl font-semibold text-primaryColor">Frontend Development</span>
             <p className="text-lg">
               I specialize in front-end web development, focusing on creating dynamic and responsive user interfaces using{" "}
               <strong>JavaScript</strong> and <strong>React</strong>. My expertise includes leveraging <strong>React Hooks</strong>, modern
@@ -30,9 +30,9 @@ export default function Skills() {
 
         {/* Backend Section */}
         <div className="flex space-x-4">
-          <FontAwesomeIcon icon={faDatabase} size="xl" className="text-primaryColor mt-1" />
+          <FontAwesomeIcon icon={faDatabase} size="xl" className="mt-1 text-primaryColor" />
           <div>
-            <span className="text-primaryColor text-2xl font-semibold">Backend Development</span>
+            <span className="text-2xl font-semibold text-primaryColor">Backend Development</span>
             <p className="text-lg">
               On the backend side, I have foundational knowledge in server-side development using <strong>Node.js</strong> and{" "}
               <strong>Express.js</strong>. I am familiar with database management using <strong>SQLite</strong> and <strong>MariaDB</strong>
@@ -49,9 +49,9 @@ export default function Skills() {
 
         {/* Mobile Development Section */}
         <div className="flex space-x-4">
-          <FontAwesomeIcon icon={faMobile} size="xl" className="text-primaryColor mt-1" />
+          <FontAwesomeIcon icon={faMobile} size="xl" className="mt-1 text-primaryColor" />
           <div>
-            <span className="text-primaryColor text-2xl font-semibold">Mobile Development</span>
+            <span className="text-2xl font-semibold text-primaryColor">Mobile Development</span>
             <p className="text-lg">
               On the mobile development front, I have developed cross-platform applications using <strong>React Native</strong>,
               implementing essential features like biometric authentication, push notifications, and background services. I am skilled in
@@ -67,7 +67,7 @@ export default function Skills() {
         </div>
 
         {/* Closing Summary */}
-        <p className="text-center text-xl font-medium">
+        <p className="text-center text-xl font-semibold">
           Overall, my experience allows me to deliver scalable web and mobile applications tailored to meet user needs, combining robust
           frontend design with essential backend functionalities.
         </p>

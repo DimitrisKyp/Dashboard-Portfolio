@@ -16,6 +16,9 @@ export default {
         secondaryColor: "var(--color-secondary)",
         profileColor: "var(--color-profile)",
       },
+      fontFamily: {
+        Sora: ["Sora", "Helvetica", "Arial", "sans-serif"],
+      },
     },
     screens: {
       "max-2xl": { max: "1399px" },
