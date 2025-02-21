@@ -1,11 +1,11 @@
 import NavigationPanel from "./components/NavigationPanel";
 import ProfilePanel from "./components/ProfilePanel";
 import MainPanel from "./components/MainPanel";
-import ParticlesBackground from "./services/providers/ParticlesBackground";
+import ParticlesBackground from "./utils/ParticlesBackground";
 
 export default function App() {
   return (
-    <div className="text-appColor flex h-screen">
+    <div className="flex h-screen text-appColor">
       {/* Particle Background */}
       <ParticlesBackground />
 
