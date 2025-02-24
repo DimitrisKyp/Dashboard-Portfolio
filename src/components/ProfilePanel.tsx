@@ -4,10 +4,7 @@ import { faFacebook, faGithub, faInstagram, faLinkedin } from "@fortawesome/free
 export default function ProfilePanel() {
   return (
     <div className="relative flex h-full w-full flex-col justify-end overflow-hidden rounded-sm">
-      <div
-        className="absolute inset-0 z-0 h-full w-full scale-150 bg-cover bg-center"
-        style={{ backgroundImage: "url('/src/assets/images/profile.JPG')" }}
-      >
+      <div className="absolute inset-0 z-0 h-full w-full scale-150 bg-cover bg-center" style={{ backgroundImage: "url('/profile.JPG')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
       </div>
 

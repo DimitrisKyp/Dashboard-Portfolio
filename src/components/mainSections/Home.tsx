@@ -6,17 +6,17 @@ import "../../assets/styles/marquee.css";
 export default function Home() {
   // const descriptions = ["Frontend Developer", "React Enthusiast", "UI/UX Designer"];
   const technologies = [
-    { name: "JavaScript", src: "/src/assets/images/javascript.svg" },
-    { name: "React", src: "/src/assets/images/react.svg" },
-    { name: "Tailwind", src: "/src/assets/images/tailwind-css.svg" },
-    { name: "TypeScript", src: "/src/assets/images/typescript.svg" },
-    { name: "CSS", src: "/src/assets/images/css3.svg" },
-    { name: "Node JS", src: "/src/assets/images/node-js.svg" },
-    { name: "JQuery", src: "/src/assets/images/jquery.svg" },
-    { name: "Git", src: "/src/assets/images/git.svg" },
-    { name: "Redux", src: "/src/assets/images/redux.svg" },
-    { name: "Android Studio", src: "/src/assets/images/android-studio.svg" },
-    { name: "Xcode", src: "/src/assets/images/xcode.svg" },
+    { name: "JavaScript", src: "/javascript.svg" },
+    { name: "React", src: "/react.svg" },
+    { name: "Tailwind", src: "/tailwind-css.svg" },
+    { name: "TypeScript", src: "/typescript.svg" },
+    { name: "CSS", src: "/css3.svg" },
+    { name: "Node JS", src: "/node-js.svg" },
+    { name: "JQuery", src: "/jquery.svg" },
+    { name: "Git", src: "/git.svg" },
+    { name: "Redux", src: "/redux.svg" },
+    { name: "Android Studio", src: "/android-studio.svg" },
+    { name: "Xcode", src: "/xcode.svg" },
   ];
 
   const scrollToSection = (sectionId: string) => {

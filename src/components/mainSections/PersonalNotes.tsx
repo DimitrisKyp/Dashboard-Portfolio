@@ -2,17 +2,17 @@ export default function PersonalNotes() {
   const interests = [
     {
       title: "Music",
-      image: "/src/assets/images/music-notes.svg",
+      image: "/music-notes.svg",
       description: "Passionate about exploring diverse music genres and rhythms.",
     },
     {
       title: "Piano",
-      image: "/src/assets/images/piano.svg",
+      image: "/piano.svg",
       description: "Playing piano for creativity and relaxation, embracing classical and modern melodies.",
     },
     {
       title: "Swimming",
-      image: "/src/assets/images/swimmer.svg",
+      image: "/swimmer.svg",
       description: "Swimming regularly for fitness, focus, and recharging energy.",
     },
   ];
