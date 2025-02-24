@@ -8,7 +8,7 @@ import { RootState } from "../store/store";
 export default function ParticlesBackground() {
   const [init, setInit] = useState(false);
   const [themeColors, setThemeColors] = useState({
-    background: "rgba(3, 11, 21, 1)",
+    background: "rgba(32, 34, 36, 1)",
     particles: "rgba(202, 251, 253, 1)",
   });
   const theme = useSelector((state: RootState) => state.preferences.theme);
@@ -16,7 +16,7 @@ export default function ParticlesBackground() {
   const updateThemeColors = () => {
     if (theme === "dark") {
       setThemeColors({
-        background: "rgba(3, 11, 21, 1)",
+        background: "rgba(32, 34, 36, 1)",
         particles: "rgba(202, 251, 253, 1)",
       });
     } else if (theme === "light") {
