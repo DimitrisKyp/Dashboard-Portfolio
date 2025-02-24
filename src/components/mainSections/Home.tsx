@@ -1,4 +1,4 @@
-import Typewriter from "../../utils/Typewriter";
+import Typewriter from "../../utils/typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faCheckDouble } from "@fortawesome/free-solid-svg-icons";
 import "../../assets/styles/marquee.css";
