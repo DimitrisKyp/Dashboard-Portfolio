@@ -1,10 +1,10 @@
-// import Typewriter from "../../utils/Typewriter";
+import Typewriter from "../../utils/Typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faCheckDouble } from "@fortawesome/free-solid-svg-icons";
 import "../../assets/styles/marquee.css";
 
 export default function Home() {
-  // const descriptions = ["Frontend Developer", "React Enthusiast", "UI/UX Designer"];
+  const descriptions = ["Frontend Developer", "React Enthusiast", "UI/UX Designer"];
   const technologies = [
     { name: "JavaScript", src: "/javascript.svg" },
     { name: "React", src: "/react.svg" },
@@ -29,7 +29,7 @@ export default function Home() {
         <span className="mr-2 text-5xl font-normal">Dimitris</span>
         <span className="text-5xl font-semibold text-primaryColor">Kyprianou</span>
 
-        {/* <Typewriter descriptions={descriptions} /> */}
+        <Typewriter descriptions={descriptions} />
         <p className="m-0 text-lg text-secondaryColor">A Frontend Developer Crafting Smooth & Engaging Web Experiences</p>
       </div>
 

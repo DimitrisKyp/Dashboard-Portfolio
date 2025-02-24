@@ -37,12 +37,11 @@ export default function Contact() {
         <span className="text-5xl font-semibold text-primaryColor">Me</span>
       </div>
 
-      {/* Flexbox layout centered with responsive wrap */}
       <div className="flex flex-wrap justify-center gap-8">
         {contactDetails.map((item, index) => (
           <div
             key={index}
-            className="flex w-64 flex-col items-center justify-between rounded-sm bg-thirdLayer p-6 shadow-lg transition-transform duration-300 hover:scale-110"
+            className="flex w-72 flex-col items-center justify-between rounded-sm bg-thirdLayer p-6 shadow-lg transition-transform duration-300 hover:scale-110"
           >
             <FontAwesomeIcon icon={item.icon} size="3x" className="mb-4 text-primaryColor" />
             <div className="text-center">

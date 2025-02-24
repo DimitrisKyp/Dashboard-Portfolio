@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 
 interface TypewriterProps {
   descriptions: string[];
-  typingSpeed?: number;
-  pauseTime?: number;
 }
 
-export default function Typewriter({ descriptions, typingSpeed = 30, pauseTime = 4000 }: TypewriterProps) {
+export default function Typewriter({ descriptions }: TypewriterProps) {
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const typingSpeed = 30;
+  const pauseTime = 4000;
 
   useEffect(() => {
     const handleTyping = () => {
