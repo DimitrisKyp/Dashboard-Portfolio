@@ -1,7 +1,7 @@
 import Typewriter from "../../utils/Typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faCheckDouble } from "@fortawesome/free-solid-svg-icons";
-import "../../../src/assets/styles/marquee.css";
+import "../../assets/styles/marquee.css";
 
 export default function Home() {
   const descriptions = ["Frontend Developer", "React Enthusiast", "UI/UX Designer"];
