@@ -3,14 +3,14 @@ import { faFacebook, faGithub, faInstagram, faLinkedin } from "@fortawesome/free
 
 export default function ProfilePanel() {
   return (
-    <div className="relative flex h-full w-full flex-col justify-end overflow-hidden rounded-sm">
-      <div className="absolute inset-0 z-0 h-full w-full scale-150 bg-cover bg-center" style={{ backgroundImage: "url('/profile.JPG')" }}>
+    <div className="relative flex h-[80%] w-[100%] flex-col justify-end overflow-hidden rounded-sm">
+      <div className="absolute inset-0 z-0 h-full w-full scale-150  bg-cover bg-center" style={{ backgroundImage: "url('/profile.JPG')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
       </div>
 
       {/* Social Links */}
       <div className="relative z-10 mb-5 flex w-full justify-center space-x-8">
-        <span className="text-3xl font-semibold text-profileColor">Dimitris</span>
+        <span className="text-2xl font-semibold text-profileColor">Dimitris</span>
       </div>
       <div className="relative z-10 mb-5 flex w-full justify-center space-x-8">
         <a href="https://github.com/DimitrisKyp" target="_blank" rel="noopener noreferrer">

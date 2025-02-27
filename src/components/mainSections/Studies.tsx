@@ -1,13 +1,6 @@
 export default function Studies() {
   const studies = [
     {
-      institute: "1st Lyceum of Neapoli",
-      period: "Class of 2016",
-      GPA: "G.P.A. 19.0/20",
-      title: "High School Diploma",
-      description: ``,
-    },
-    {
       institute: "Aristotle University of Thessaloniki",
       period: "2016 - 2022",
       GPA: "G.P.A. 6.6",
@@ -21,6 +14,13 @@ export default function Studies() {
         Quantum Mechanics.
       `,
     },
+    {
+      institute: "1st Lyceum of Neapoli",
+      period: "Class of 2016",
+      GPA: "G.P.A. 19.0/20",
+      title: "High School Diploma",
+      description: ``,
+    }
   ];
 
   return (

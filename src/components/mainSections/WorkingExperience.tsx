@@ -1,16 +1,6 @@
 export default function WorkingExperience() {
   const experiences = [
     {
-      company: "Masoutis S.A",
-      period: "May 2021 - September 2022",
-      role: "Sales & Customer Service",
-      roleDescription: `
-        Managed invoices and digital bookkeeping for operational efficiency.
-        Oversaw product management to streamline sales processes.
-        Delivered top-tier customer service, driving client satisfaction.
-      `,
-    },
-    {
       company: "Olympia Electronics",
       period: "October 2022 - Present",
       role: "Frontend Web Developer",
@@ -22,6 +12,16 @@ export default function WorkingExperience() {
         Developed a React/Redux web dashboard for gateway management.
         Migrated Angular applications to React, cutting load times and project size significantly.
         Authored manuals, ensuring documentation clarity and accessibility.
+      `,
+    },
+    {
+      company: "Masoutis S.A",
+      period: "May 2021 - September 2022",
+      role: "Sales & Customer Service",
+      roleDescription: `
+        Managed invoices and digital bookkeeping for operational efficiency.
+        Oversaw product management to streamline sales processes.
+        Delivered top-tier customer service, driving client satisfaction.
       `,
     },
   ];

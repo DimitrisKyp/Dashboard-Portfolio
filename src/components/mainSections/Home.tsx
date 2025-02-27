@@ -9,14 +9,12 @@ export default function Home() {
     { name: "JavaScript", src: "/javascript.svg" },
     { name: "React", src: "/react.svg" },
     { name: "Tailwind", src: "/tailwind-css.svg" },
-    { name: "TypeScript", src: "/typescript.svg" },
+    // { name: "TypeScript", src: "/typescript.svg" },
     { name: "CSS", src: "/css3.svg" },
     { name: "Node JS", src: "/node-js.svg" },
     { name: "JQuery", src: "/jquery.svg" },
     { name: "Git", src: "/git.svg" },
     { name: "Redux", src: "/redux.svg" },
-    { name: "Android Studio", src: "/android-studio.svg" },
-    { name: "Xcode", src: "/xcode.svg" },
   ];
 
   const scrollToSection = (sectionId: string) => {

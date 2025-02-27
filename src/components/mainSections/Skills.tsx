@@ -58,10 +58,8 @@ export default function Skills() {
               managing application states with <strong>Redux</strong> and ensuring smooth performance.
             </p>
             <p className="mt-4 text-lg">
-              Additionally, I have practical experience with tools such as <strong>Android Studio</strong> and <strong>Xcode</strong> for
-              testing and deployment, contributing to high-quality deliverables. I have also assisted in publishing applications to both the{" "}
-              <strong>Google Play Store</strong> and <strong>Apple App Store</strong>, ensuring compliance with platform-specific
-              guidelines.
+              Additionally, I have assisted in publishing applications to both the <strong>Google Play Store</strong> {""}
+              and <strong>Apple App Store</strong>, ensuring compliance with platform-specific guidelines.
             </p>
           </div>
         </div>
