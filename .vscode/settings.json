@@ -1,0 +1,25 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 21,
+  "explorer.compactFolders": false,
+  "explorer.decorations.colors": true,
+  "explorer.decorations.badges": true,
+  "explorer.excludeGitIgnore": false,
+  "explorer.fileNesting.enabled": false,
+  "explorer.fileNesting.expand": true,
+  "outline.icons": true,
+  "outline.problems.badges": true,
+  "outline.problems.colors": true,
+  "explorer.expandSingleFolderWorkspaces": true,
+  "errorLens.delay": 500,
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
+}
