@@ -8,7 +8,7 @@ export default function Skills() {
         <span className="mr-2 text-5xl font-normal">My</span>
         <span className="text-5xl font-semibold text-primaryColor">Advantages</span>
       </div>
-      <div className="mt-10 space-y-8 text-lg leading-relaxed text-secondaryColor">
+      <div className="mt-10 text-lg leading-relaxed text-secondaryColor">
         {/* Frontend Section */}
         <div className="flex space-x-4">
           <FontAwesomeIcon icon={faCode} size="xl" className="mt-1 text-primaryColor" />
@@ -57,10 +57,10 @@ export default function Skills() {
               implementing essential features like biometric authentication, push notifications, and background services. I am skilled in
               managing application states with <strong>Redux</strong> and ensuring smooth performance.
             </p>
-            <p className="mt-4 text-lg">
+            {/* <p className="mt-4 text-lg">
               Additionally, I have assisted in publishing applications to both the <strong>Google Play Store</strong> {""}
               and <strong>Apple App Store</strong>, ensuring compliance with platform-specific guidelines.
-            </p>
+            </p> */}
           </div>
         </div>
 
