@@ -28,7 +28,7 @@ export default function WorkingExperience() {
 
   return (
     <div className="flex flex-col space-y-10 rounded-sm bg-secondLayer p-6">
-      <div>
+      <div className="sm:flex-row flex flex-col">
         <span className="mr-2 text-5xl font-normal">Working</span>
         <span className="text-5xl font-semibold text-primaryColor">Experience</span>
       </div>
@@ -39,7 +39,7 @@ export default function WorkingExperience() {
           <div key={index} className="relative mb-2 flex space-x-4">
             {/* Left Side - Company & Period */}
             <div className="w-3/12 text-right">
-              <span className="text-xl font-semibold text-appColor">{exp.company}</span>
+              <span className="whitespace-normal break-words text-xl font-semibold text-appColor">{exp.company}</span>
               <p className="text-lg text-secondaryColor">{exp.period}</p>
             </div>
 

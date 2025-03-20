@@ -12,18 +12,24 @@ import "../../src/assets/styles/scrollbar.css";
 
 export default function MainPanel() {
   const dispatch = useDispatch();
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const [rootMarginValue, setRootMarginValue] = useState(
-    window.innerWidth >= 768 && window.innerWidth <= 1024 ? "-60px 0px" : "-100px 0px",
-  );
   const containerRef = useRef<HTMLDivElement>(null);
+  const [thresholdValue, setThresholdValue] = useState(0.5);
 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      setIsMobile(width < 768);
-      setRootMarginValue(width >= 768 && width <= 1024 ? "-60px 0px" : "-100px 0px");
+      if (width < 400) {
+        setThresholdValue(0.1);
+      } else if (width >= 400 && width < 768) {
+        setThresholdValue(0.2);
+      } else if (width >= 768 && width < 1024) {
+        setThresholdValue(0.4);
+      } else {
+        setThresholdValue(0.5);
+      }
     };
+
+    handleResize();
 
     window.addEventListener("resize", handleResize);
     return () => {
@@ -43,8 +49,8 @@ export default function MainPanel() {
       },
       {
         root: containerRef.current,
-        rootMargin: rootMarginValue,
-        threshold: isMobile ? 0.3 : 0.5,
+        rootMargin: "-100px 0px",
+        threshold: thresholdValue,
       },
     );
 
@@ -53,7 +59,7 @@ export default function MainPanel() {
     return () => {
       sections.forEach(section => observer.unobserve(section));
     };
-  }, [dispatch, rootMarginValue]);
+  }, [dispatch, thresholdValue]);
 
   return (
     <div ref={containerRef} className="custom-scrollbar h-[90%] w-[90%] space-y-6 overflow-y-auto scroll-smooth text-appColor">

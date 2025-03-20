@@ -19,7 +19,7 @@ export default function PersonalNotes() {
 
   return (
     <div className="flex flex-col rounded-sm bg-secondLayer p-6">
-      <div>
+      <div className="sm:flex-row flex flex-col">
         <span className="mr-2 text-5xl font-normal">Personal</span>
         <span className="text-5xl font-semibold text-primaryColor">Notes</span>
       </div>
@@ -33,11 +33,11 @@ export default function PersonalNotes() {
       </div>
 
       {/* Interests Section */}
-      <div className="flex justify-evenly">
+      <div className="sm:flex-row flex flex-col items-center justify-evenly">
         {interests.map((interest, index) => (
           <div
             key={index}
-            className="group flex w-1/4 flex-col rounded-sm bg-thirdLayer p-6 text-center shadow-lg transition-transform duration-300 hover:scale-110"
+            className="md:w-1/4 group flex w-[80%] flex-col rounded-sm bg-thirdLayer p-6 text-center shadow-lg transition-transform duration-300 hover:scale-110"
           >
             <div className="flex justify-center p-4">
               <div

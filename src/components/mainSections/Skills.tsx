@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Skills() {
   return (
     <div className="flex flex-col rounded-sm bg-secondLayer p-6">
-      <div>
+      <div className="sm:flex-row flex flex-col">
         <span className="mr-2 text-5xl font-normal">My</span>
         <span className="text-5xl font-semibold text-primaryColor">Advantages</span>
       </div>

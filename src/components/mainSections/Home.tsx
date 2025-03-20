@@ -24,15 +24,17 @@ export default function Home() {
   return (
     <div className="flex flex-col rounded-sm bg-secondLayer p-6">
       {/* Name Header */}
-      <div>
+      <div className="sm:flex-row md:mb-0 mb-4 flex flex-col">
         <span className="mr-2 text-5xl font-normal">Dimitris</span>
         <span className="text-5xl font-semibold text-primaryColor">Kyprianou</span>
       </div>
 
-      <div className="flex h-[400px] w-full justify-between">
+      <div className="md:flex-row md:h-[450px] md:justify-between flex h-[600px] w-full flex-col-reverse items-center">
         {/* Left Section */}
-        <div className="flex w-[60%] flex-col space-y-8">
-          <Typewriter descriptions={descriptions} />
+        <div className="md:w-[60%] flex w-full flex-col space-y-8">
+          <div className="h-[30px]">
+            <Typewriter descriptions={descriptions} />
+          </div>
           <div className="text-lg text-secondaryColor">A Frontend Developer Crafting Smooth & Engaging Web Experiences</div>
 
           {/* Availability */}
@@ -89,7 +91,7 @@ export default function Home() {
         </div>
 
         {/* Profile Image */}
-        <div className="relative h-[350px] w-[350px] overflow-hidden rounded-full border-4 border-primaryColor shadow-lg">
+        <div className="sm:h-[350px] sm:w-[350px] relative flex h-[350px] w-[250px] overflow-hidden rounded-full border-4 border-primaryColor shadow-lg">
           <div className="h-full w-full scale-125 bg-cover bg-center" style={{ backgroundImage: "url('/profile.png')" }}>
             <div className="absolute inset-0 bg-gradient-to-tl from-black/30 to-transparent"></div>
           </div>
