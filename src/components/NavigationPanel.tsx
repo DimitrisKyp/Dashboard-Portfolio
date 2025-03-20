@@ -43,9 +43,9 @@ export default function NavigationPanel() {
   ];
 
   return (
-    <nav className="flex h-[90%] flex-col justify-between">
+    <nav className="md:h-[90%] md:justify-between flex flex-col">
       {/* Main Nav Buttons */}
-      <div className="flex flex-col space-y-5">
+      <div className="md:flex-col md:space-y-5 flex flex-row">
         {navItems.map(({ id, icon, label }) => (
           <div key={id} className="relative flex items-center justify-center">
             <button
@@ -54,12 +54,12 @@ export default function NavigationPanel() {
               onMouseLeave={() => setHoveredButton(null)}
               className={`bg-transparent transition-all duration-300 ${
                 activeMenu === id ? "text-primaryColor" : "text-secondaryColor"
-              } hover:text-primaryColor hover:scale-125`}
+              } hover:scale-125 hover:text-primaryColor`}
             >
               <FontAwesomeIcon icon={icon} size="xl" />
             </button>
             {hoveredButton === id && (
-              <span className="text-profileColor absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">
+              <span className="md:left-14 md:top-0 absolute top-12 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base text-profileColor shadow-md">
                 {label}
               </span>
             )}
@@ -67,10 +67,10 @@ export default function NavigationPanel() {
         ))}
       </div>
 
-      <div className="bg-primaryColor h-[2px] w-full" />
+      <div className="h-[2px] w-full bg-primaryColor" />
 
       {/* Theme Toggle + Download CV */}
-      <div className="flex flex-col space-y-5">
+      <div className="md:flex-col md:space-y-5 flex flex-row justify-center">
         <div className="relative flex items-center justify-center">
           <a
             href="/CV.pdf"
@@ -82,7 +82,7 @@ export default function NavigationPanel() {
             <FontAwesomeIcon icon={faCloudDownload} size="xl" />
           </a>
           {hoveredButton === "cv" && (
-            <span className="text-profileColor absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">
+            <span className="md:left-14 md:top-0 absolute top-12 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base text-profileColor shadow-md">
               Download CV
             </span>
           )}
@@ -93,7 +93,7 @@ export default function NavigationPanel() {
             onClick={handleThemeToggle}
             onMouseEnter={() => setHoveredButton("theme")}
             onMouseLeave={() => setHoveredButton(null)}
-            className={`hover:text-primaryColor text-appColor bg-transparent transition-all duration-300 hover:scale-125`}
+            className={`bg-transparent text-appColor transition-all duration-300 hover:scale-125 hover:text-primaryColor`}
           >
             <motion.div
               key={themeVar}
@@ -105,7 +105,7 @@ export default function NavigationPanel() {
             </motion.div>
           </button>
           {hoveredButton === "theme" && (
-            <span className="text-profileColor absolute left-14 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base shadow-md">
+            <span className="md:left-14 md:top-0 absolute top-12 z-20 w-max rounded-sm bg-tooltip px-2 py-1 text-base text-profileColor shadow-md">
               Change Theme
             </span>
           )}

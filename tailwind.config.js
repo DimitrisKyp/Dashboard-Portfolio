@@ -20,14 +20,6 @@ export default {
         Sora: ["Sora", "Helvetica", "Arial", "sans-serif"],
       },
     },
-    screens: {
-      "max-2xl": { max: "1399px" },
-      "max-xl": { max: "1279px" },
-      "max-lg": { max: "1023px" },
-      "max-md": { max: "767px" },
-      "max-sm": { max: "599px" },
-      "max-xs": { max: "449px" },
-    },
   },
   plugins: [],
 };

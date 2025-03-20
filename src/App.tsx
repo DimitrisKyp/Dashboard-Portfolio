@@ -8,11 +8,11 @@ export default function App() {
       {/* Particle Background */}
       <ParticlesBackground />
 
-      <div className="relative flex h-full w-full items-center justify-center space-x-6">
-        <div className="flex h-[70%] w-[5%] items-center justify-center rounded-xl bg-firstLayer">
+      <div className="md:flex-row md:space-x-6 md:overflow-auto relative flex h-full w-full flex-col items-center justify-center overflow-hidden">
+        <div className="md:h-[70%] md:w-[10%] lg:w-[90px] md:pt-0 flex h-[10%] w-[100%] items-center justify-center rounded-xl bg-firstLayer pt-6">
           <NavigationPanel />
         </div>
-        <div className="flex h-full w-[60%] items-center justify-center rounded-sm bg-firstLayer">
+        <div className="md:w-[80%] md:h-full flex h-[90%] w-[100%] items-center justify-center rounded-xl bg-firstLayer">
           <MainPanel />
         </div>
       </div>

@@ -60,7 +60,7 @@ export default function Contact() {
       </div>
 
       {/* Two Column Layout */}
-      <div className="md:grid-cols-2 grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 gap-8">
         {/* Left Column: Static Contact Details */}
         <div className="rounded-lg bg-thirdLayer p-6 shadow-md">
           <div className="space-y-6">

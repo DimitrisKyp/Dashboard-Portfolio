@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { setActiveMenu } from "../store/slices/preferencesSlice";
 import AboutMe from "./mainSections/About";
@@ -12,7 +12,24 @@ import "../../src/assets/styles/scrollbar.css";
 
 export default function MainPanel() {
   const dispatch = useDispatch();
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [rootMarginValue, setRootMarginValue] = useState(
+    window.innerWidth >= 768 && window.innerWidth <= 1024 ? "-60px 0px" : "-100px 0px",
+  );
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setIsMobile(width < 768);
+      setRootMarginValue(width >= 768 && width <= 1024 ? "-60px 0px" : "-100px 0px");
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -26,8 +43,8 @@ export default function MainPanel() {
       },
       {
         root: containerRef.current,
-        rootMargin: "-100px 0px", // Detects sections slightly before they fully appear
-        threshold: 0.5,
+        rootMargin: rootMarginValue,
+        threshold: isMobile ? 0.3 : 0.5,
       },
     );
 
@@ -36,7 +53,7 @@ export default function MainPanel() {
     return () => {
       sections.forEach(section => observer.unobserve(section));
     };
-  }, [dispatch]);
+  }, [dispatch, rootMarginValue]);
 
   return (
     <div ref={containerRef} className="custom-scrollbar h-[90%] w-[90%] space-y-6 overflow-y-auto scroll-smooth text-appColor">
